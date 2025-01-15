@@ -1,0 +1,12 @@
+integer x
+
+x = RandomNumber(1, 100)
+
+if (x%3 == 0) and (x%5 == 0)
+   Put "fizzbuzz" to output
+elseif (x%3 == 0)
+   Put "fizz" to output
+elseif (x%5 == 0)
+   Put "buzz" to output
+else
+   Put "Neither" to output
