@@ -77,8 +77,10 @@ public class AllInOne {
             num1 = (scanner.next());
             for (int x = 0; x < num1.length(); x++) {
                 if (!Character.isDigit(num1.charAt(x))) {
-                    canBreak = false;
-                    System.out.println("\nPlease enter integers...\n");
+                    if (!(x == 0 && num1.charAt(0) == '-')) {
+                        canBreak = false;
+                        System.out.println("\nPlease enter integers...\n");
+                    }
                 }
             }
             if (canBreak) {
@@ -86,8 +88,10 @@ public class AllInOne {
                 num2 = scanner.next();
                 for (int x = 0; x < num2.length(); x++) {
                     if (!Character.isDigit(num2.charAt(x))) {
-                        canBreak = false;
-                        System.out.println("\nPlease enter integers...\n");
+                        if (!(x == 0 && num2.charAt(0) == '-')) {
+                            canBreak = false;
+                            System.out.println("\nPlease enter integers...\n");
+                        }
                     }
                 }
                 if (canBreak) {
@@ -95,8 +99,10 @@ public class AllInOne {
                     num3 = scanner.next();
                     for (int x = 0; x < num3.length(); x++) {
                         if (!Character.isDigit(num3.charAt(x))) {
-                            canBreak = false;
-                            System.out.println("\nPlease enter integers...\n");
+                            if (!(x == 0 && num3.charAt(0) == '-')) {
+                                canBreak = false;
+                                System.out.println("\nPlease enter integers...\n");
+                            }
                         }
                     }
                     if (canBreak) {
